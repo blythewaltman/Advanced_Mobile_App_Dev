@@ -1,1 +1,2 @@
-# Advanced_Mobile_App_Dev
+# Author: Blythe Waltman
+Advanced Mobile Application Development Projects
