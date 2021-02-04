@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Top</string>
+		<key>options</key>
+		<array>
+			<string>T-shirt</string>
+			<string>Tank Top</string>
+			<string>Sweatshirt</string>
+			<string>Blouse</string>
+			<string>Blazer</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bottom</string>
+		<key>options</key>
+		<array>
+			<string>Jeans</string>
+			<string>Skirt</string>
+			<string>Leggings</string>
+			<string>Sweat pants</string>
+			<string>Trousers</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Hat</string>
+		<key>options</key>
+		<array>
+			<string>Baseball Cap</string>
+			<string>Beanie</string>
+			<string>Bucket Hat</string>
+			<string>Headband</string>
+			<string>knit hat</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Shoe</string>
+		<key>options</key>
+		<array>
+			<string>Sneakers</string>
+			<string>Heels</string>
+			<string>Sandals</string>
+			<string>Flip flops</string>
+			<string>Slippers</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Accessory</string>
+		<key>options</key>
+		<array>
+			<string>Hand bag</string>
+			<string>Bracelet</string>
+			<string>Necklace</string>
+			<string>Earrings</string>
+			<string>Belt</string>
+		</array>
+	</dict>
+</array>
+</plist>

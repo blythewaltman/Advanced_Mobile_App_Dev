@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RlI-fZ-rt5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="whatToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6wm-lU-A6z">
+                                <rect key="frame" x="33" y="259" width="348" height="378.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get inspiration for what colors to wear today!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oKR-oU-l5r">
+                                        <rect key="frame" x="0.0" y="0.0" width="348" height="20.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="31e-sb-E3K">
+                                        <rect key="frame" x="0.0" y="30.5" width="348" height="348"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="h1E-UT-atJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="170"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yaa-Q8-CTr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="170" id="SZE-xg-Lan">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="130"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="height" constant="170" id="vg9-Dp-x3A">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="130"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nA9-an-ZNm"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fqh-tV-fZL">
+                                                        <rect key="frame" x="178" y="0.0" width="170" height="170"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="170" id="e1N-KL-W3h"/>
+                                                            <constraint firstAttribute="width" constant="170" id="fQk-vZ-Pgo"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeSecondButtonColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3QJ-cW-H7U"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sKz-LW-o21">
+                                                <rect key="frame" x="0.0" y="178" width="348" height="170"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM4-kV-VE5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="170" id="2G4-5j-VNL">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="130"/>
+                                                            </constraint>
+                                                            <constraint firstAttribute="width" constant="170" id="dBd-vd-blw">
+                                                                <variation key="heightClass=compact-widthClass=compact" constant="120"/>
+                                                                <variation key="heightClass=compact-widthClass=regular" constant="130"/>
+                                                            </constraint>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeThirdColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="na4-BZ-Ws9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3o-YI-2tS">
+                                                        <rect key="frame" x="178" y="0.0" width="170" height="170"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="170" id="5Tw-mF-e0l"/>
+                                                            <constraint firstAttribute="width" constant="170" id="us6-D9-0DZ"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="changeFourthColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p2w-eq-qHt"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <variation key="heightClass=compact-widthClass=regular" axis="vertical"/>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90115916841246579" green="0.93379161140677547" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kja-aR-Mxk"/>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OcE-Xv-OZS"/>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QBv-TA-oX0"/>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c1N-N9-Elt"/>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g3N-pc-oA3"/>
+                            <constraint firstItem="6wm-lU-A6z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q90-dY-FXm"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kja-aR-Mxk"/>
+                                <exclude reference="OcE-Xv-OZS"/>
+                                <exclude reference="QBv-TA-oX0"/>
+                                <exclude reference="c1N-N9-Elt"/>
+                                <exclude reference="g3N-pc-oA3"/>
+                                <exclude reference="q90-dY-FXm"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="c1N-N9-Elt"/>
+                                <include reference="g3N-pc-oA3"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="Kja-aR-Mxk"/>
+                                <include reference="QBv-TA-oX0"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="OcE-Xv-OZS"/>
+                                <include reference="q90-dY-FXm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="paintpalette" catalog="system" selectedImage="paintpalette" id="gUP-cJ-QJO"/>
+                    <connections>
+                        <outlet property="ColorButton" destination="Yaa-Q8-CTr" id="7pV-ay-Zhs"/>
+                        <outlet property="fourthColorButton" destination="e3o-YI-2tS" id="GV8-Jk-zQ0"/>
+                        <outlet property="secondColorButton" destination="Fqh-tV-fZL" id="c86-Vk-wp1"/>
+                        <outlet property="thirdColorButton" destination="oM4-kV-VE5" id="q3B-nb-Cq8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-881" y="975"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vXK-iY-WAB">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RlI-fZ-rt5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="itM-zB-Mxd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fsL-ux-9tL"/>
+                        <segue destination="ajC-fH-IvB" kind="relationship" relationship="viewControllers" id="ioZ-bA-HHE"/>
+                        <segue destination="Sle-YJ-sF1" kind="relationship" relationship="viewControllers" id="4Uq-nU-o8M"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2N7-WP-51f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="128.57142857142856"/>
+        </scene>
+        <!--Clothing Selection View Controller-->
+        <scene sceneID="bPo-g1-a9Q">
+            <objects>
+                <viewController id="ajC-fH-IvB" customClass="ClothingSelectionViewController" customModule="whatToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ux9-BK-8pb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wWZ-Ed-rn1">
+                                <rect key="frame" x="47" y="275" width="320" height="346.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Browse options for what to wear!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6w-NP-kwi">
+                                        <rect key="frame" x="35.5" y="0.0" width="249.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfX-QN-YPU">
+                                        <rect key="frame" x="0.0" y="50.5" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ajC-fH-IvB" id="uDn-ca-vLu"/>
+                                            <outlet property="delegate" destination="ajC-fH-IvB" id="Fpg-KV-C7k"/>
+                                        </connections>
+                                    </pickerView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5h-FF-iQa">
+                                        <rect key="frame" x="9" y="296.5" width="302" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SEf-S3-4dV"/>
+                        <color key="backgroundColor" red="0.90115916839999999" green="0.9337916114" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wWZ-Ed-rn1" firstAttribute="centerY" secondItem="Ux9-BK-8pb" secondAttribute="centerY" id="5Xs-zC-93n"/>
+                            <constraint firstItem="wWZ-Ed-rn1" firstAttribute="centerX" secondItem="Ux9-BK-8pb" secondAttribute="centerX" id="d6q-lB-uiu"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person.fill.questionmark" catalog="system" selectedImage="person.fill.questionmark" id="2xq-b0-afM"/>
+                    <connections>
+                        <outlet property="choiceLabel" destination="w5h-FF-iQa" id="0TM-pk-KzT"/>
+                        <outlet property="clothingPicker" destination="PfX-QN-YPU" id="z3W-H1-2Ru"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FlS-TN-hTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="975"/>
+        </scene>
+        <!--Weather App View Controller-->
+        <scene sceneID="ryM-gV-2qn">
+            <objects>
+                <viewController id="Sle-YJ-sF1" customClass="WeatherAppViewController" customModule="whatToWear" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m8p-nG-r3e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I91-UF-Qpx">
+                                <rect key="frame" x="10" y="232" width="394" height="432.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check the weather for today!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgp-iN-bZY">
+                                        <rect key="frame" x="23.5" y="0.0" width="347" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gC0-BB-4NO">
+                                        <rect key="frame" x="0.0" y="38.5" width="394" height="394"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                        </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="BeG-z0-l4A"/>
+                                            <constraint firstAttribute="height" constant="200" id="fKw-qS-ZGZ"/>
+                                            <constraint firstAttribute="height" constant="200" id="grr-qu-vOb"/>
+                                            <constraint firstAttribute="width" secondItem="gC0-BB-4NO" secondAttribute="height" multiplier="1:1" id="nQi-1B-qIu">
+                                                <variation key="heightClass=compact-widthClass=regular" constant="0.5"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="200" id="oPW-Em-1ky"/>
+                                        </constraints>
+                                        <state key="normal" image="weather"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="BeG-z0-l4A"/>
+                                                <exclude reference="fKw-qS-ZGZ"/>
+                                                <exclude reference="grr-qu-vOb"/>
+                                                <exclude reference="nQi-1B-qIu"/>
+                                                <exclude reference="oPW-Em-1ky"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="grr-qu-vOb"/>
+                                                <include reference="oPW-Em-1ky"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="BeG-z0-l4A"/>
+                                                <include reference="fKw-qS-ZGZ"/>
+                                                <exclude reference="nQi-1B-qIu"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="goToWeather:" destination="Sle-YJ-sF1" eventType="touchUpInside" id="Sye-0m-jDq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal" spacing="20"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fBs-9l-cxU"/>
+                        <color key="backgroundColor" red="0.90115916839999999" green="0.9337916114" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I91-UF-Qpx" firstAttribute="centerY" secondItem="m8p-nG-r3e" secondAttribute="centerY" id="GXZ-HY-BCo"/>
+                            <constraint firstItem="I91-UF-Qpx" firstAttribute="centerX" secondItem="m8p-nG-r3e" secondAttribute="centerX" id="LRR-DO-dWM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="cloud" catalog="system" selectedImage="cloud" id="JTF-89-DBY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMZ-ib-rQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1127.536231884058" y="975"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloud" catalog="system" width="128" height="87"/>
+        <image name="paintpalette" catalog="system" width="128" height="105"/>
+        <image name="person.fill.questionmark" catalog="system" width="128" height="104"/>
+        <image name="weather" width="394" height="394"/>
+    </resources>
+</document>
