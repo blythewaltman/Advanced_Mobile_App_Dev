@@ -1,0 +1,372 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDBBC18F25F146F0000F8A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC18E25F146F0000F8A67 /* AppDelegate.swift */; };
+		FDBBC19125F146F0000F8A67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC19025F146F0000F8A67 /* SceneDelegate.swift */; };
+		FDBBC19625F146F0000F8A67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBBC19425F146F0000F8A67 /* Main.storyboard */; };
+		FDBBC19825F146F3000F8A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDBBC19725F146F3000F8A67 /* Assets.xcassets */; };
+		FDBBC19B25F146F3000F8A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDBBC19925F146F3000F8A67 /* LaunchScreen.storyboard */; };
+		FDBBC1A425F14A91000F8A67 /* PrimaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1A325F14A91000F8A67 /* PrimaryViewController.swift */; };
+		FDBBC1A725F14AB5000F8A67 /* SecondaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1A625F14AB5000F8A67 /* SecondaryViewController.swift */; };
+		FDBBC1AA25F14B2F000F8A67 /* aesthetic.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDBBC1A925F14B2F000F8A67 /* aesthetic.plist */; };
+		FDBBC1AD25F14B83000F8A67 /* AestheticsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1AC25F14B83000F8A67 /* AestheticsData.swift */; };
+		FDBBC1B025F14BCE000F8A67 /* AestheticsDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1AF25F14BCE000F8A67 /* AestheticsDataLoader.swift */; };
+		FDBBC1B325F14FC3000F8A67 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1B225F14FC3000F8A67 /* CollectionViewCell.swift */; };
+		FDBBC1B625F15586000F8A67 /* SupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1B525F15586000F8A67 /* SupplementaryView.swift */; };
+		FDBBC1B925F16943000F8A67 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBBC1B825F16943000F8A67 /* DetailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FDBBC18B25F146F0000F8A67 /* Aesthetica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aesthetica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDBBC18E25F146F0000F8A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDBBC19025F146F0000F8A67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FDBBC19525F146F0000F8A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FDBBC19725F146F3000F8A67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDBBC19A25F146F3000F8A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDBBC19C25F146F3000F8A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDBBC1A325F14A91000F8A67 /* PrimaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryViewController.swift; sourceTree = "<group>"; };
+		FDBBC1A625F14AB5000F8A67 /* SecondaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryViewController.swift; sourceTree = "<group>"; };
+		FDBBC1A925F14B2F000F8A67 /* aesthetic.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = aesthetic.plist; sourceTree = "<group>"; };
+		FDBBC1AC25F14B83000F8A67 /* AestheticsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AestheticsData.swift; sourceTree = "<group>"; };
+		FDBBC1AF25F14BCE000F8A67 /* AestheticsDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AestheticsDataLoader.swift; sourceTree = "<group>"; };
+		FDBBC1B225F14FC3000F8A67 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		FDBBC1B525F15586000F8A67 /* SupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementaryView.swift; sourceTree = "<group>"; };
+		FDBBC1B825F16943000F8A67 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDBBC18825F146F0000F8A67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDBBC18225F146F0000F8A67 = {
+			isa = PBXGroup;
+			children = (
+				FDBBC18D25F146F0000F8A67 /* Aesthetica */,
+				FDBBC18C25F146F0000F8A67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDBBC18C25F146F0000F8A67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDBBC18B25F146F0000F8A67 /* Aesthetica.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDBBC18D25F146F0000F8A67 /* Aesthetica */ = {
+			isa = PBXGroup;
+			children = (
+				FDBBC18E25F146F0000F8A67 /* AppDelegate.swift */,
+				FDBBC19025F146F0000F8A67 /* SceneDelegate.swift */,
+				FDBBC19425F146F0000F8A67 /* Main.storyboard */,
+				FDBBC1B825F16943000F8A67 /* DetailViewController.swift */,
+				FDBBC1B525F15586000F8A67 /* SupplementaryView.swift */,
+				FDBBC1B225F14FC3000F8A67 /* CollectionViewCell.swift */,
+				FDBBC1AC25F14B83000F8A67 /* AestheticsData.swift */,
+				FDBBC1AF25F14BCE000F8A67 /* AestheticsDataLoader.swift */,
+				FDBBC1A625F14AB5000F8A67 /* SecondaryViewController.swift */,
+				FDBBC1A325F14A91000F8A67 /* PrimaryViewController.swift */,
+				FDBBC19725F146F3000F8A67 /* Assets.xcassets */,
+				FDBBC19925F146F3000F8A67 /* LaunchScreen.storyboard */,
+				FDBBC19C25F146F3000F8A67 /* Info.plist */,
+				FDBBC1A925F14B2F000F8A67 /* aesthetic.plist */,
+			);
+			path = Aesthetica;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDBBC18A25F146F0000F8A67 /* Aesthetica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDBBC19F25F146F3000F8A67 /* Build configuration list for PBXNativeTarget "Aesthetica" */;
+			buildPhases = (
+				FDBBC18725F146F0000F8A67 /* Sources */,
+				FDBBC18825F146F0000F8A67 /* Frameworks */,
+				FDBBC18925F146F0000F8A67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aesthetica;
+			productName = Aesthetica;
+			productReference = FDBBC18B25F146F0000F8A67 /* Aesthetica.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDBBC18325F146F0000F8A67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					FDBBC18A25F146F0000F8A67 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = FDBBC18625F146F0000F8A67 /* Build configuration list for PBXProject "Aesthetica" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDBBC18225F146F0000F8A67;
+			productRefGroup = FDBBC18C25F146F0000F8A67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDBBC18A25F146F0000F8A67 /* Aesthetica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDBBC18925F146F0000F8A67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBBC19B25F146F3000F8A67 /* LaunchScreen.storyboard in Resources */,
+				FDBBC19825F146F3000F8A67 /* Assets.xcassets in Resources */,
+				FDBBC19625F146F0000F8A67 /* Main.storyboard in Resources */,
+				FDBBC1AA25F14B2F000F8A67 /* aesthetic.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDBBC18725F146F0000F8A67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDBBC1B925F16943000F8A67 /* DetailViewController.swift in Sources */,
+				FDBBC18F25F146F0000F8A67 /* AppDelegate.swift in Sources */,
+				FDBBC1A425F14A91000F8A67 /* PrimaryViewController.swift in Sources */,
+				FDBBC19125F146F0000F8A67 /* SceneDelegate.swift in Sources */,
+				FDBBC1B325F14FC3000F8A67 /* CollectionViewCell.swift in Sources */,
+				FDBBC1B025F14BCE000F8A67 /* AestheticsDataLoader.swift in Sources */,
+				FDBBC1A725F14AB5000F8A67 /* SecondaryViewController.swift in Sources */,
+				FDBBC1B625F15586000F8A67 /* SupplementaryView.swift in Sources */,
+				FDBBC1AD25F14B83000F8A67 /* AestheticsData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FDBBC19425F146F0000F8A67 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDBBC19525F146F0000F8A67 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FDBBC19925F146F3000F8A67 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDBBC19A25F146F3000F8A67 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDBBC19D25F146F3000F8A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDBBC19E25F146F3000F8A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDBBC1A025F146F3000F8A67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Aesthetica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bwalt.Aesthetica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDBBC1A125F146F3000F8A67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Aesthetica/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bwalt.Aesthetica;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDBBC18625F146F0000F8A67 /* Build configuration list for PBXProject "Aesthetica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBBC19D25F146F3000F8A67 /* Debug */,
+				FDBBC19E25F146F3000F8A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDBBC19F25F146F3000F8A67 /* Build configuration list for PBXNativeTarget "Aesthetica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDBBC1A025F146F3000F8A67 /* Debug */,
+				FDBBC1A125F146F3000F8A67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDBBC18325F146F0000F8A67 /* Project object */;
+}

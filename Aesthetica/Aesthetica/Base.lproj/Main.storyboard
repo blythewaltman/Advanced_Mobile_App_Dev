@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nCM-SG-yTc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Aesthetics-->
+        <scene sceneID="KUM-et-Wih">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="ZEB-WZ-D1a" customClass="PrimaryViewController" customModule="Aesthetica" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kIl-uG-8fP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="TfK-3E-0Uw">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TfK-3E-0Uw" id="6v9-SN-dH6">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="EiG-5u-txS" kind="showDetail" identifier="detailsegue" id="8ed-gM-Q8Y"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZEB-WZ-D1a" id="trg-Qs-tyh"/>
+                            <outlet property="delegate" destination="ZEB-WZ-D1a" id="egk-t7-HfP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Aesthetics" id="QjH-8E-W5v"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skQ-DJ-T9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="841" y="-186"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ehg-9b-O1G">
+            <objects>
+                <navigationController id="bUE-6G-Lv7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oyY-8k-New">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZEB-WZ-D1a" kind="relationship" relationship="rootViewController" id="gCs-Lb-iMf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RWl-24-5xh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-47" y="-186"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="nzI-Ds-eK4">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" id="nCM-SG-yTc" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="bUE-6G-Lv7" kind="relationship" relationship="masterViewController" id="vQX-Ac-bd2"/>
+                        <segue destination="EiG-5u-txS" kind="relationship" relationship="detailViewController" id="Ce7-CW-GOO"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smg-yi-Kk8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-940" y="117"/>
+        </scene>
+        <!--Secondary View Controller-->
+        <scene sceneID="JyU-za-pik">
+            <objects>
+                <collectionViewController id="3Cf-Z1-abe" customClass="SecondaryViewController" customModule="Aesthetica" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Plg-Hi-uZK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="EYD-Ud-Ma4">
+                            <size key="itemSize" width="248" height="166"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
+                            <size key="footerReferenceSize" width="50" height="50"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="cJH-mj-BOC" customClass="CollectionViewCell" customModule="Aesthetica" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="50" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="8g4-nW-v91">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dWo-6N-Seu">
+                                            <rect key="frame" x="8" y="8" width="84" height="84"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dWo-6N-Seu" firstAttribute="leading" secondItem="8g4-nW-v91" secondAttribute="leadingMargin" id="SMo-Y8-DTi"/>
+                                        <constraint firstItem="dWo-6N-Seu" firstAttribute="top" secondItem="8g4-nW-v91" secondAttribute="topMargin" id="Ykp-n5-isM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="dWo-6N-Seu" secondAttribute="trailing" id="i99-MJ-HTk"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dWo-6N-Seu" secondAttribute="bottom" id="lty-9y-I7E"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <size key="customSize" width="100" height="100"/>
+                                <connections>
+                                    <outlet property="imageView" destination="dWo-6N-Seu" id="i31-rx-ANf"/>
+                                    <segue destination="Y7n-2V-1LA" kind="show" identifier="showDetail" id="Avr-Hi-69V"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="headerIdentifier" id="Rak-rQ-1PO" customClass="SupplementaryView" customModule="Aesthetica" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osp-vE-KJY">
+                                    <rect key="frame" x="18" y="8" width="67" height="34"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="osp-vE-KJY" secondAttribute="trailing" constant="20" symbolic="YES" id="8oe-9e-x1J"/>
+                                <constraint firstItem="osp-vE-KJY" firstAttribute="centerY" secondItem="Rak-rQ-1PO" secondAttribute="centerY" id="Lqz-Vk-3px"/>
+                                <constraint firstItem="osp-vE-KJY" firstAttribute="leading" secondItem="Rak-rQ-1PO" secondAttribute="leadingMargin" constant="10" id="uAF-Z7-J3B"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="headerLabel" destination="osp-vE-KJY" id="6Vn-9w-Tzr"/>
+                            </connections>
+                        </collectionReusableView>
+                        <collectionReusableView key="sectionFooterView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="footerIdentifier" id="zNh-H6-iHa" customClass="SupplementaryView" customModule="Aesthetica" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="150" width="414" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47V-HC-f7U">
+                                    <rect key="frame" x="176.5" y="8.5" width="61.5" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="28"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="47V-HC-f7U" firstAttribute="centerY" secondItem="zNh-H6-iHa" secondAttribute="centerY" id="DWp-YT-1Qs"/>
+                                <constraint firstItem="47V-HC-f7U" firstAttribute="centerX" secondItem="zNh-H6-iHa" secondAttribute="centerX" id="Jv3-Ji-6AB"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="footerLabel" destination="47V-HC-f7U" id="9Z6-JI-FaL"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="3Cf-Z1-abe" id="WAh-tr-Ouv"/>
+                            <outlet property="delegate" destination="3Cf-Z1-abe" id="ZNo-Hq-qgb"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="Ca6-MR-aYk"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DRX-Mg-cvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972.46376811594212" y="597.99107142857144"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="nlk-JO-TIB">
+            <objects>
+                <viewController id="Y7n-2V-1LA" customClass="DetailViewController" customModule="Aesthetica" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uuE-CN-LzZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QOb-pk-8A3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sXZ-bM-bUE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QOb-pk-8A3" firstAttribute="top" secondItem="sXZ-bM-bUE" secondAttribute="top" id="FqV-PG-rDP"/>
+                            <constraint firstItem="sXZ-bM-bUE" firstAttribute="trailing" secondItem="QOb-pk-8A3" secondAttribute="trailing" id="Sxm-QQ-1TQ"/>
+                            <constraint firstItem="QOb-pk-8A3" firstAttribute="leading" secondItem="sXZ-bM-bUE" secondAttribute="leading" id="cqi-lQ-kSV"/>
+                            <constraint firstItem="sXZ-bM-bUE" firstAttribute="bottom" secondItem="QOb-pk-8A3" secondAttribute="bottom" id="w6W-BS-uAE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FQ2-9D-6cA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="9Zi-vQ-iGQ">
+                            <connections>
+                                <action selector="share:" destination="Y7n-2V-1LA" id="sN3-aa-QC7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="QOb-pk-8A3" id="smp-zC-Exx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zFN-ef-XxY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855" y="598"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fk0-S0-X2K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EiG-5u-txS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3qd-nD-YNZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Cf-Z1-abe" kind="relationship" relationship="rootViewController" id="eqT-T2-926"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8m-WZ-a9Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62.318840579710148" y="597.99107142857144"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8ed-gM-Q8Y"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

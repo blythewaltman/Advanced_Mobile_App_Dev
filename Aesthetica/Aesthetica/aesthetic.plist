@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Spring</string>
+		<key>images</key>
+		<array>
+			<string>image1</string>
+			<string>image2</string>
+			<string>image3</string>
+			<string>image4</string>
+			<string>image5</string>
+			<string>image6</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Summer</string>
+		<key>images</key>
+		<array>
+			<string>image7</string>
+			<string>image8</string>
+			<string>image9</string>
+			<string>image10</string>
+			<string>image11</string>
+			<string>image12</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Fall</string>
+		<key>images</key>
+		<array>
+			<string>image13</string>
+			<string>image14</string>
+			<string>image15</string>
+			<string>image16</string>
+			<string>image17</string>
+			<string>image18</string>
+		</array>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Winter</string>
+		<key>images</key>
+		<array>
+			<string>image19</string>
+			<string>image20</string>
+			<string>image21</string>
+			<string>image22</string>
+			<string>image23</string>
+			<string>image24</string>
+		</array>
+	</dict>
+</array>
+</plist>
