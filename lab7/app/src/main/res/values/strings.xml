@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab7</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_cloud">Clouds</string>
+    <string name="nav_tree">Trees</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Click on the Options Menu to filter between different aspects of the environment and get a list of their various types</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
