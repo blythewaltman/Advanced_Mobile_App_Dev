@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Lab8</string>
+    <string name="directions"><![CDATA[Enter your name and the name of your partner/lover/crush to find Love compatibility & chances of successful love relationship]]></string>
+    <string name="calculateBtnText">Calculate Compatibilty</string>
+    <string name="appName">Love Connection</string>
+</resources>
