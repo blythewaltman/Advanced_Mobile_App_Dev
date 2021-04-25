@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">dreamDiary</string>
+    <string name="title_new_entry">New Entry</string>
+    <string name="title_prev_entries">Previous Entries</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="save_button">Save</string>
+    <string name="new_entry_hint">Begin writing...</string>
+    <string name="addItem">Add Item</string>
+    <string name="add">Add</string>
+    <string name="itemAdded">Item Added</string>
+    <string name="action">Action</string>
+    <string name="delete">Delete?</string>
+    <string name="deleteItem">Item Deleted</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="nightmare">This was a nightmare</string>
+    <string name="yes_switch">YES</string>
+    <string name="no_switch">NO</string>
+</resources>

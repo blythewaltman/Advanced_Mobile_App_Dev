@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_newEntry"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/title_new_entry" />
+
+    <item
+        android:id="@+id/navigation_prevEntries"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="@string/title_prev_entries" />
+
+</menu>

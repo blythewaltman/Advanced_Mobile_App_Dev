@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_newEntry">
+
+    <fragment
+        android:id="@+id/navigation_newEntry"
+        android:name="com.example.dreamdiary.ui.newEntry.NewEntryFragment"
+        android:label="@string/title_new_entry"
+        tools:layout="@layout/fragment_new_entry" />
+
+    <fragment
+        android:id="@+id/navigation_prevEntries"
+        android:name="com.example.dreamdiary.ui.prevEntries.PreviousEntriesFragment"
+        android:label="@string/title_prev_entries"
+        tools:layout="@layout/fragment_prev_entries" />
+</navigation>
